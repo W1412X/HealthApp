@@ -15,14 +15,19 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.w1412x.health1.R;
+
+import org.json.JSONObject;
+
 public class ExmineQuestionareAlert extends RelativeLayout {
 
     public Button submit_button;
     private LinearLayout question_container;
     public ImageButton close_button;
+    private JSONObject content;
 
-    public ExmineQuestionareAlert(Context context) {
+    public ExmineQuestionareAlert(Context context,JSONObject content) {
         super(context);
+        this.content=content;////
         init(context);
     }
 

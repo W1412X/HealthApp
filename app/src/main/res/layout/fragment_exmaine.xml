@@ -113,6 +113,7 @@
                                     android:layout_margin="2dp"
                                     android:orientation="vertical">
                                     <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/exmine_page_xunhuanxt_button"
                                         android:layout_margin="2dp"
                                         android:layout_width="match_parent"
                                         android:layout_height="50dp"
@@ -158,6 +159,7 @@
                                     android:orientation="vertical">
 
                                     <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/exmine_page_mnxt_button"
                                         android:layout_width="match_parent"
                                         android:layout_height="50dp"
                                         android:layout_margin="2dp"
@@ -194,6 +196,7 @@
                                     android:layout_margin="2dp"
                                     android:orientation="vertical">
                                     <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/exmine_page_nfmxt_button"
                                         android:layout_margin="2dp"
                                         android:layout_width="match_parent"
                                         android:layout_height="50dp"
@@ -234,6 +237,7 @@
                                     android:layout_margin="2dp"
                                     android:orientation="vertical">
                                     <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/exmine_page_sjxt_button"
                                         android:layout_margin="2dp"
                                         android:layout_width="match_parent"
                                         android:layout_height="50dp"
@@ -269,6 +273,7 @@
                                     android:layout_margin="2dp"
                                     android:orientation="vertical">
                                     <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/exmine_page_ydxt_button"
                                         android:layout_margin="2dp"
                                         android:layout_width="match_parent"
                                         android:layout_height="50dp"
@@ -314,6 +319,7 @@
                                     android:orientation="vertical">
 
                                     <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/exmine_page_szxt_button"
                                         android:layout_width="match_parent"
                                         android:layout_height="50dp"
                                         android:layout_margin="2dp"
@@ -350,6 +356,7 @@
                                     android:layout_margin="2dp"
                                     android:orientation="vertical">
                                     <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/exmine_page_xiaohuaxt_button"
                                         android:layout_margin="2dp"
                                         android:layout_width="match_parent"
                                         android:layout_height="50dp"
@@ -390,6 +397,7 @@
                                     android:layout_margin="2dp"
                                     android:orientation="vertical">
                                     <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/exmine_page_gjxt_button"
                                         android:layout_margin="2dp"
                                         android:layout_width="match_parent"
                                         android:layout_height="50dp"
@@ -425,6 +433,7 @@
                                     android:layout_margin="2dp"
                                     android:orientation="vertical">
                                     <androidx.appcompat.widget.AppCompatButton
+                                        android:id="@+id/exmine_page_myxt_button"
                                         android:layout_margin="2dp"
                                         android:layout_width="match_parent"
                                         android:layout_height="50dp"
@@ -446,5 +455,12 @@
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/exmine_page_loading_view"
+            android:background="#55000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </RelativeLayout>
     </RelativeLayout>
 </FrameLayout>
