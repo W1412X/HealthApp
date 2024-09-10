@@ -155,6 +155,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="65dp">
                                         <ImageButton
+                                            android:id="@+id/home_page_risk_result_button"
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:background="@drawable/transparent_background"
@@ -243,25 +244,86 @@
                         </androidx.cardview.widget.CardView>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="250dp"
+                            android:layout_height="180dp"
                             android:orientation="horizontal">
                             <LinearLayout
+                                android:orientation="vertical"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1.1">
-                                <androidx.cardview.widget.CardView
-                                    app:cardUseCompatPadding="true"
-                                    app:cardElevation="6dp"
-                                    app:cardCornerRadius="8dp"
+
+                                <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-                                    <ImageButton
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+                                    <androidx.cardview.widget.CardView
+                                        app:cardUseCompatPadding="true"
+                                        app:cardElevation="2dp"
+                                        app:cardCornerRadius="8dp"
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:background="@drawable/transparent_background"
-                                        android:src="@drawable/health_examine_big_icon"
-                                        android:scaleType="centerCrop"/>
-                                </androidx.cardview.widget.CardView>
+                                        android:layout_height="match_parent">
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <ImageButton
+                                                android:id="@+id/home_page_examine_to_know_button"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@drawable/main_page_examine_to_know_background"
+                                                android:scaleType="centerCrop"/>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="55dp"
+                                                android:layout_marginStart="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginEnd="5dp"
+                                                android:layout_marginBottom="5dp"
+                                                android:background="@drawable/transparent_background"
+                                                android:text="体检须知"
+                                                android:textColor="#5a5a5a"
+                                                android:textSize="18dp"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+                                    <androidx.cardview.widget.CardView
+                                        app:cardUseCompatPadding="true"
+                                        app:cardElevation="2dp"
+                                        app:cardCornerRadius="8dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <ImageButton
+                                                android:id="@+id/home_page_examine_result_button"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@drawable/transparent_background"
+                                                android:src="@drawable/health_keeping_tips_icon"
+                                                android:scaleType="centerCrop"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="55dp"
+                                                android:layout_marginStart="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginEnd="5dp"
+                                                android:layout_marginBottom="5dp"
+                                                android:background="@drawable/transparent_background"
+                                                android:text="健康档案"
+                                                android:textColor="#5a5a5a"
+                                                android:textSize="18dp"
+                                                android:textStyle="bold" />
+                                        </RelativeLayout>
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+
                             </LinearLayout>
                             <LinearLayout
                                 android:orientation="vertical"
@@ -287,15 +349,19 @@
                                                 android:background="@drawable/transparent_background"
                                                 android:src="@drawable/slow_disease_manage_icon"
                                                 android:scaleType="centerCrop"/>
+
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="55dp"
-                                                android:text="慢性疾病管理"
-                                                android:layout_margin="5dp"
-                                                android:textSize="18dp"
-                                                android:textStyle="bold"
+                                                android:layout_marginStart="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginEnd="5dp"
+                                                android:layout_marginBottom="5dp"
                                                 android:background="@drawable/transparent_background"
-                                                android:textColor="#5a5a5a"/>
+                                                android:text="健康管理"
+                                                android:textColor="#5a5a5a"
+                                                android:textSize="18dp"
+                                                android:textStyle="bold" />
                                         </RelativeLayout>
                                     </androidx.cardview.widget.CardView>
                                 </LinearLayout>
@@ -318,51 +384,121 @@
                                                 android:background="@drawable/transparent_background"
                                                 android:src="@drawable/my_health_manager_icon"
                                                 android:scaleType="centerCrop"/>
+
                                             <TextView
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="55dp"
-                                                android:text="我的健康管理"
-                                                android:layout_margin="5dp"
+                                                android:layout_marginStart="5dp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_marginEnd="5dp"
+                                                android:layout_marginBottom="5dp"
+                                                android:background="@drawable/transparent_background"
+                                                android:text="VIP充值入口"
+                                                android:textColor="#5a5a5a"
                                                 android:textSize="18dp"
-                                                android:textStyle="bold"
-                                                android:background="@drawable/transparent_background"
-                                                android:textColor="#5a5a5a"/>
-                                        </RelativeLayout>
-                                    </androidx.cardview.widget.CardView>
-                                </LinearLayout>
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1">
-                                    <androidx.cardview.widget.CardView
-                                        app:cardUseCompatPadding="true"
-                                        app:cardElevation="2dp"
-                                        app:cardCornerRadius="8dp"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-                                        <RelativeLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent">
-                                            <ImageButton
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:background="@drawable/transparent_background"
-                                                android:src="@drawable/health_keeping_tips_icon"
-                                                android:scaleType="centerCrop"/>
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="55dp"
-                                                android:text="健康养生须知"
-                                                android:layout_margin="5dp"
-                                                android:textSize="18dp"
-                                                android:textStyle="bold"
-                                                android:background="@drawable/transparent_background"
-                                                android:textColor="#5a5a5a"/>
+                                                android:textStyle="bold" />
                                         </RelativeLayout>
                                     </androidx.cardview.widget.CardView>
                                 </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="健康咨询"
+                                    android:textStyle="bold"
+                                    android:layout_margin="5dp"
+                                    android:textSize="20sp"/>
+                                <androidx.cardview.widget.CardView
+                                    app:cardUseCompatPadding="true"
+                                    app:cardElevation="2dp"
+                                    app:cardCornerRadius="8dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/slow_disease_manage_icon"/>
+                                </androidx.cardview.widget.CardView>
+                                <ScrollView
+                                    android:layout_margin="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp">
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:src="@drawable/slow_disease_manage_icon"/>
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:src="@drawable/slow_disease_manage_icon"/>
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="80dp"
+                                            android:src="@drawable/slow_disease_manage_icon"/>
+                                    </LinearLayout>
+                                </ScrollView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_margin="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                        <ImageButton
+                                            android:layout_width="match_parent"
+                                            android:background="@drawable/home_page_women_part"
+                                            android:layout_height="match_parent">
+                                        </ImageButton>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text=""
+                                            android:textColor="#e36dc3"
+                                            android:textSize="25dp"
+                                            android:textStyle="bold"
+                                            android:layout_margin="10dp"/>
+                                    </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_margin="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp">
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+                                        <ImageButton
+                                            android:layout_width="match_parent"
+                                            android:background="@drawable/home_page_men_part"
+                                            android:layout_height="match_parent">
+                                        </ImageButton>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text=""
+                                            android:textColor="#165f9f"
+                                            android:textSize="25dp"
+                                            android:textStyle="bold"
+                                            android:layout_margin="10dp"/>
+                                    </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+
+
                         <LinearLayout
                             android:orientation="vertical"
                             android:layout_width="match_parent"

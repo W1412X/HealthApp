@@ -34,13 +34,13 @@ public class MainExmaineFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    private SharedPreferences sharedPreferences= getActivity().getSharedPreferences("user", Context.MODE_PRIVATE);
+    private SharedPreferences sharedPreferences;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
     private RelativeLayout loading_view;
     Handler handler;
-    private String examine_url="http://";
+    private String examine_url="http://116.204.83.200:8080/health/api/questionnaire";
 
     private Button hxxt_button,xunhuanxt_button,mnxt_button,nfmxt_button,sjxt_button,ydxt_button,szxt_button,xiaohuaxt_button,gjxt_button,myxt_button;
     public MainExmaineFragment() {
@@ -68,6 +68,7 @@ public class MainExmaineFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sharedPreferences=requireActivity().getSharedPreferences("user",Context.MODE_PRIVATE);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -104,8 +105,9 @@ public class MainExmaineFragment extends Fragment {
                             handler.post(new Runnable() {
                                 @Override
                                 public void run() {
+                                    loading_view.setVisibility(View.GONE);
                                     Dialog builder=new Dialog(requireActivity());
-                                    ExmineQuestionareAlert tmp=new ExmineQuestionareAlert(requireActivity(),json);
+                                    ExmineQuestionareAlert tmp=new ExmineQuestionareAlert(requireActivity(),json,examine_url);
                                     tmp.close_button.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View v) {
@@ -121,7 +123,7 @@ public class MainExmaineFragment extends Fragment {
                                 @Override
                                 public void run() {
                                     loading_view.setVisibility(View.GONE);
-                                    Toast.makeText(requireActivity(),"未知错误",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(requireActivity(),"网络错误,无法获取问卷内容",Toast.LENGTH_SHORT).show();
                                 }
                             });
                         }

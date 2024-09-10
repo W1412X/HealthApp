@@ -1,5 +1,6 @@
 package com.w1412x.health1.main_page_activity_pages;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,8 +8,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.w1412x.health1.R;
+import com.w1412x.health1.other_pages.exmine_to_know_page;
+import com.w1412x.health1.other_pages.risk_page;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,6 +25,8 @@ public class MainHomeFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    private ImageButton exmine_to_know_button,risk_button;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -57,10 +63,28 @@ public class MainHomeFragment extends Fragment {
         }
     }
 
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        init_view(view);
+        return view;
+    }
+    public void init_view(View view){
+        exmine_to_know_button=view.findViewById(R.id.home_page_examine_to_know_button);
+        exmine_to_know_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), exmine_to_know_page.class));
+            }
+        });
+        risk_button=view.findViewById(R.id.home_page_risk_result_button);
+        risk_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), risk_page.class));
+            }
+        });
+
     }
 }

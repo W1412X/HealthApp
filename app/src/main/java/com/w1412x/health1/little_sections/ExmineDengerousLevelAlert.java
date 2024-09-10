@@ -14,8 +14,6 @@ import com.w1412x.health1.R;
 public class ExmineDengerousLevelAlert extends RelativeLayout {
 
     public Button confirm_button;
-
-
     public ExmineDengerousLevelAlert(Context context) {
         super(context);
         init(context);

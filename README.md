@@ -77,3 +77,29 @@
 - 服务器返回对应消化系统问卷清单的内容以及此清单id
 - 用户填写后发送填写结果到服务器
 - 服务器处理后返回分数  
+
+
+```mysql
+CREATE TABLE questionnaire (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    time TIMESTAMP,
+    source VARCHAR(255)
+);
+
+CREATE TABLE question(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  questionnaire_id INT,
+  question TEXT,
+  type VARCHAR(255),
+  candidate_answers TEXT,
+  answer VARCHAR(255),
+  FOREIGN KEY (questionnaore_id REFERENCES questionnaire(id))
+)
+
+CREATE TABLE user_answer(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  questionnaire
+)
+```

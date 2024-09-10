@@ -90,7 +90,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_margin="1dp"
-                                        android:src="@drawable/exmine_hxxt_icon"
+                                        android:background="@drawable/exmine_hxxt_icon"
                                         android:scaleType="centerInside"/>
                                 </LinearLayout>
                             </RelativeLayout>
@@ -126,7 +126,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_margin="1dp"
-                                        android:src="@drawable/exmine_cricle_icon"
+                                        android:background="@drawable/exmine_cricle_icon"
                                         android:scaleType="centerInside"/>
                                 </LinearLayout>
                             </RelativeLayout>
@@ -174,7 +174,7 @@
                                         android:layout_height="match_parent"
                                         android:layout_margin="1dp"
                                         android:scaleType="centerInside"
-                                        android:src="@drawable/exmine_mnxt_icon" />
+                                        android:background="@drawable/exmine_mnxt_icon" />
                                 </LinearLayout>
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
@@ -209,7 +209,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_margin="1dp"
-                                        android:src="@drawable/exmine_nfmxt_icon"
+                                        android:background="@drawable/exmine_nfmxt_icon"
                                         android:scaleType="centerInside"/>
                                 </LinearLayout>
                             </RelativeLayout>
@@ -250,7 +250,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_margin="1dp"
-                                        android:src="@drawable/exmine_sjxt_icon"
+                                        android:background="@drawable/exmine_sjxt_icon"
                                         android:scaleType="centerInside"/>
                                 </LinearLayout>
                             </RelativeLayout>
@@ -286,7 +286,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_margin="1dp"
-                                        android:src="@drawable/exmine_ydxt_icon"
+                                        android:background="@drawable/exmine_ydxt_icon"
                                         android:scaleType="centerInside"/>
                                 </LinearLayout>
                             </RelativeLayout>
@@ -334,7 +334,7 @@
                                         android:layout_height="match_parent"
                                         android:layout_margin="1dp"
                                         android:scaleType="centerInside"
-                                        android:src="@drawable/exmine_szxt_icon" />
+                                        android:background="@drawable/exmine_szxt_icon" />
                                 </LinearLayout>
                             </RelativeLayout>
                         </androidx.cardview.widget.CardView>
@@ -369,7 +369,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_margin="1dp"
-                                        android:src="@drawable/exmine_xhxt_icon"
+                                        android:background="@drawable/exmine_xhxt_icon"
                                         android:scaleType="centerInside"/>
                                 </LinearLayout>
                             </RelativeLayout>
@@ -410,7 +410,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_margin="1dp"
-                                        android:src="@drawable/exmine_gjxt_icon"
+                                        android:background="@drawable/exmine_gjxt_icon"
                                         android:scaleType="centerInside"/>
                                 </LinearLayout>
                             </RelativeLayout>
@@ -446,7 +446,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_margin="1dp"
-                                        android:src="@drawable/exmine_myxt_icon"
+                                        android:background="@drawable/exmine_myxt_icon"
                                         android:scaleType="centerInside"/>
                                 </LinearLayout>
                             </RelativeLayout>

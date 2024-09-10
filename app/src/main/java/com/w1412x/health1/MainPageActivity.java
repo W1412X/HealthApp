@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.w1412x.health1.main_page_activity_pages.MainExmaineFragment;
@@ -44,6 +45,7 @@ public class MainPageActivity extends AppCompatActivity {
             } else if (item.getItemId() == R.id.menu_exmine) {
                 selectedFragment = fragmentManager.findFragmentByTag("MainExmaineFragment");
                 if (selectedFragment == null) {
+                    Toast.makeText(MainPageActivity.this,"第一次处理",Toast.LENGTH_SHORT).show();
                     selectedFragment = new MainExmaineFragment();
                     fragmentTransaction.add(R.id.main_fragment_container, selectedFragment, "MainExmaineFragment");
                 }
